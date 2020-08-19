@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Web application main page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="style/mainstyle.css" type="text/css">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+        <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+        <script src="script/utilities.js" type="text/javascript"></script>        
+    </head>
+    <body>
+        <div id='mainDiv' class="maindiv">
+            <h1 id="header" hidden="">Welcome to the beach resort web site!</h1>
+            <p id="description" hidden="">
+                Dear user, we want to inform you that to avoid gatherings due to the emergency covid-19, 
+                our staff has prepared a protocol to follow, so that you can spend your days at the beach safely. 
+                From today access is constrained by an advance booking, register using the form next to it, 
+                or log in to book your seat immediately!
+            </p>
+            <div class="divimg"><img id="mainimg" style="position: relative; left: 5px; top: 5px"  src="https://www.romagnanotizie.net/photogallery_new/images/2000/01/spiaggia5-jpg-116526.660x368.jpg" alt="" hidden=""/><br/>
+                <label class="linklbl">Source: </label><a class="linklbl" href="https://www.google.com/search?q=spiagge+sicilia&tbm=isch&ved=2ahUKEwiLz8rKw7XpAhUYt6QKHVpiDNEQ2-cCegQIABAA&oq=spiagge+sicilia&gs_lcp=CgNpbWcQAzIECAAQQzICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIAFCx5QxY5uYMYJnpDGgBcAB4AIABZogBZpIBAzAuMZgBAKABAaoBC2d3cy13aXotaW1n&sclient=img&ei=Ll2-XouADpjukgXaxLGIDQ&bih=657&biw=1349&tbs=isz%3Am&hl=it">Photogallery Sicily</a>
+            </div>
+        </div>        
+        <div id="regpopup" class="scnddiv" hidden="">
+            <fieldset class="formField">
+                <legend>Registration Form</legend>
+                <form id="form" action="./NewUser" method="post">
+                    <label for="username" class="input">E-mail:</label> <input class="input" id="username" type="email" name="username" required/><br/><br/>
+                    <label for="password" class="input">Password:</label><input class="input" id="password" type="password" name="password" required/><br/><br/>
+                    <label for="repassword" class="input">Confirm password:</label><input class="input" id="repassword" type="password" name="repassword" required/><br/><br/>
+                    <input id="submitBtn" style="position: relative; top: 20px; left: 70px" type="submit" value="Register"/>
+                </form>
+            </fieldset>            
+        </div>
+        <div id="logDiv" hidden="">
+            <fieldset>
+                <form id="logForm" action="./Login" method="post">
+                    <label for="email" class="input">E-mail:</label> <input class="input" id="email" type="email" name="email" required/><br/><br/>
+                    <label for="password" class="input">Password:</label><input class="input" id="pssw" type="password" name="pssw" required/><br/><br/>
+                    <input id="loginBtn" style="position: relative; top: 20px; left: 70px" type="submit" value="Login"/>
+                </form>
+            </fieldset>
+        </div>
+        <div id="optionDiv">
+            <button id="regBtn">Register now and book your place!</button>
+            <button id="popup" class="formBtn">
+                <span class="ui-icon ui-icon-person"></span>
+             </button>
+        </div>
+    </body>
+</html>

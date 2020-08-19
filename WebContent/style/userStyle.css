@@ -1,0 +1,58 @@
+body{
+    background-color: #e6e6e6;
+    font-family: sans-serif
+}
+
+fieldset {
+    position: absolute;
+    background-color: #ffffcc;
+    left: 10px;
+    top: 10px;
+    width: 240px;
+    height: 150px
+}
+
+#results {
+    position: absolute;
+    left: 200px;
+    top: 200px
+}
+
+#updateresult {
+    position: absolute;
+    left: 20px;
+    top: 200px
+}
+
+table {
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-collapse: collapse
+}
+
+td, th, tr{
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-collapse: collapse;
+    text-align: center
+}
+
+span.error {
+    position: relative;
+    top: 5px;
+    color: #f00;
+}
+
+#ordDiv{
+    position: absolute;
+    left:400px;
+    top: 200px
+}
+
+#checkDiv{
+    position: absolute;
+    left:400px;
+    top: 20px
+}

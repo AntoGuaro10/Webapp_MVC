@@ -1,0 +1,106 @@
+body{
+    background-color: #e6e6e6;
+    font-family: sans-serif
+}
+
+#description{
+    position: relative;
+    margin-left: 80px;
+    margin-right: 80px;
+    font: 14px sans-serif;
+}
+
+div.maindiv{
+    position: absolute;
+    background-color: #ffffcc;
+    top: 0px;
+    bottom: 0px;
+    left: 260px;
+    width: 800px
+}
+
+#optionDiv{
+    position: absolute;
+    top: 0px;
+    left: 1014px;
+    width: 350px;
+    height: 30px;
+    background-color: #e6e6e6;
+    border-width: 0.5px;
+    border-style: solid;
+    border-color: lightslategrey    
+}
+
+#header{
+    position: relative;
+    left: 110px;
+    font-family: sans-serif
+}
+
+div.divimg{
+    position: relative; 
+    left: 65px; 
+    width: 670px; 
+    height: 400px
+}
+
+#regBtn{
+    position: relative;
+    left: 10px;
+    top: 5px;
+    font-family: sans-serif;
+    font: 15px sans-serif
+}
+
+button.formBtn{
+    position: relative;
+    background-color: #ccccff;
+    width: 30px;
+    height: 20px;
+    left: 15px;
+    top: 5px
+}
+
+.input{
+    position: relative;
+    top: 5px;
+    left: 1px;
+    font-family: sans-serif 
+}
+
+#regpopup{
+    position: relative;
+    top: 50px;
+    left: 550px;
+    width: 400px;
+    height: 300px;
+    border-radius: 2%
+}
+
+#form{
+    width: 210px
+}
+
+.formField{
+    width: 220px;
+    background-color: #ccccff;
+    border-radius: 5%
+}
+
+#logDiv{
+    position: absolute;
+    left: 1060px;
+    top: 30px
+}
+
+.linklbl {
+    position: relative; 
+    left: 5px; 
+    top: 40px
+}
+
+span.error {
+    position: relative;
+    top: 5px;
+    color: #f00;
+}
